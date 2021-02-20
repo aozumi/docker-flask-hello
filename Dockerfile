@@ -12,4 +12,6 @@ ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 ENV MYNAME Docker-Hello-kun
 
+EXPOSE 8000
+
 CMD ["/usr/local/bin/gunicorn", "-b", "0:8000", "hello.main"]
